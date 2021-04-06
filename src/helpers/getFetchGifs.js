@@ -1,7 +1,7 @@
 export const getFetchGifs = async (category) => {
   const url = `https://api.giphy.com/v1/gifs/search?q=${encodeURI(
     category
-  )}&api_key=${process.env.REACT_APP_GIPHY_APIKEY}`;
+  )}&limit=36&api_key=${process.env.REACT_APP_GIPHY_APIKEY}`;
 
   const resp = await fetch(url);
 

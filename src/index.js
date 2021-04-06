@@ -5,6 +5,13 @@ import { GifExpertApp } from './GifExpertApp';
 
 import './index.css';
 import 'animate.css'
+import { Footer } from './components/Footer';
 
-ReactDOM.render(<GifExpertApp />, document.getElementById('root'));
+ReactDOM.render(
+  <>
+    <GifExpertApp />
+    <Footer />
+  </>,
+  document.getElementById('root')
+);
 

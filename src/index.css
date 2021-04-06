@@ -1,87 +1,136 @@
+:root {
+  --charcoal: #264653;
+  --deep-champagne: #ee6c4d;
+  --eggshell: #edf6f9;
+  --green-sheen: #99d98c;
+  --independence: #014f86;
+  --persian-green: #2a9d8f;
+  --prussian-blue: #003049;
+  --sandy-brown: #f4a261;
+  --terra-cotta: #e07a5f;
+
+  --primary: var(--terra-cotta);
+  --secondary: var(--independence);
+  --warning: var(--sandy-brown);
+  --success: var(--green-sheen);
+  --danger: var(--deep-champagne);
+  --info: var(--persian-green);
+  --dark: var(--prussian-blue);
+  --light: var(--eggshell);
+}
+
 * {
+  color: var(--light);
   font-family: Avenir, Helvetica, sans-serif;
 }
 
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.text-thin {
+  font-weight: 100;
+}
+
 body {
+  background-color: var(--dark);
   padding: 20px 60px;
-  background-color: beige;
+}
+
+footer {
+  align-items: center;
+  display: flex;
+  font-size: 0.8rem;
+  font-style: italic;
+  justify-content: center;
+  margin-top: 30px;
+}
+footer img {
+  height: 25px;
+  margin: 0 25px;
+}
+footer .name{
+  font-weight: normal;
+}
+footer .powered{
+  margin: 0;
 }
 form {
-  display: flex;
   column-gap: 20px;
+  display: flex;
 }
 
 input[type='text'] {
-  border: 1px solid #bcbcbc;
+  border: 2px solid var(--primary);
   border-radius: 5px;
   box-sizing: border-box;
-  color: #272727;
+  color: var(--dark);
   font-size: 1rem;
   padding: 12px 20px;
   width: 100%;
 }
 
 input[type='text']:focus {
+  border-color: var(--secondary);
   outline: none;
-  border-color: bisque;
-  box-shadow: 0 0 5px bisque;
 }
 
 button {
-  padding: 0 2rem;
-  background-color: bisque;
-  color: brown;
-  text-transform: uppercase;
-  font-weight: 700;
+  background-color: var(--primary);
   border: none;
   border-radius: 5px;
   box-sizing: border-box;
+  color: var(--accent);
+  font-weight: 700;
+  padding: 0 2rem;
+  text-transform: uppercase;
 }
 
 button:hover {
-  background-color: rgb(250, 203, 145);
+  background-color: var(--danger);
 }
 
 button:active {
-  background-color: rgb(245, 173, 86);
+  background-color: var(--warning);
 }
 button:focus {
-  outline:none;
+  outline: none;
 }
 
 hr {
   border-bottom: 0;
-  border-top: 1px solid #bcbcbc;
+  border-top: 1px solid var(--secondary);
   margin: 20px 0;
 }
 
 .card-grid {
-  justify-content: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .card {
   align-content: center;
-  background-color: white;
-  box-shadow: 5px 0 10px #bcbcbc;
+  background-color: var(--secondary);
   border-radius: 5px;
+  color: rgb(165, 91, 42);
   overflow: hidden;
   width: 100%;
 }
 
 .card p {
   font-weight: 700;
-  text-transform: capitalize;
-  padding: 5px;
+  padding: 10px;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .card img {
-  min-width: 100%;
   height: 200px;
+  min-width: 100%;
 }
 
 @media only screen and (min-width: 768px) {

@@ -26,7 +26,7 @@ export const ChangeCategory = ({ setCategory }) => {
         value={inputValue}
         onChange={handleInputChange}
       />
-      <button type="submit">Buscar</button>
+      <button type="submit">Search</button>
     </form>
   );
 };
