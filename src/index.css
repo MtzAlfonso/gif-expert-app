@@ -35,7 +35,7 @@ h1 {
 
 body {
   background-color: var(--dark);
-  padding: 20px 60px;
+  padding: 10px 20px;
 }
 
 footer {
@@ -134,11 +134,17 @@ hr {
 }
 
 @media only screen and (min-width: 768px) {
+  body{
+    padding: 20px 60px;
+  }
   .card {
     width: 48%;
   }
 }
 @media only screen and (min-width: 1200px) {
+  body{
+    padding: 20px 80px;
+  }
   .card {
     width: 32%;
   }
