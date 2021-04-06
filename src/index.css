@@ -6,6 +6,10 @@ body {
   padding: 20px 60px;
   background-color: beige;
 }
+form {
+  display: flex;
+  column-gap: 20px;
+}
 
 input[type='text'] {
   border: 1px solid #bcbcbc;
@@ -17,7 +21,35 @@ input[type='text'] {
   width: 100%;
 }
 
-hr{
+input[type='text']:focus {
+  outline: none;
+  border-color: bisque;
+  box-shadow: 0 0 5px bisque;
+}
+
+button {
+  padding: 0 2rem;
+  background-color: bisque;
+  color: brown;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: rgb(250, 203, 145);
+}
+
+button:active {
+  background-color: rgb(245, 173, 86);
+}
+button:focus {
+  outline:none;
+}
+
+hr {
   border-bottom: 0;
   border-top: 1px solid #bcbcbc;
   margin: 20px 0;
@@ -37,7 +69,7 @@ hr{
   box-shadow: 5px 0 10px #bcbcbc;
   border-radius: 5px;
   overflow: hidden;
-  width: 32%;
+  width: 100%;
 }
 
 .card p {
@@ -50,4 +82,15 @@ hr{
 .card img {
   min-width: 100%;
   height: 200px;
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 48%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .card {
+    width: 32%;
+  }
 }

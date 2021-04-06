@@ -8,12 +8,10 @@ const useFetchGifs = (category) => {
   //? y asi evitar llamar la función cada que el estado cambie
   useEffect(() => {
     getFetchGifs(category).then((images) => {
-      setTimeout(() => {
-        setState({
-          data: images,
-          loading: false,
-        });
-      }, 3000);
+      setState({
+        data: images,
+        loading: false,
+      });
     });
   }, [category]);
 
