@@ -4,7 +4,7 @@ import { GifGrid } from './components/GifGrid';
 
 export const GifExpertApp = () => {
   // Hook para modificar el estado
-  const [categories, setCategories] = useState(['Dragon Ball']);
+  const [categories, setCategories] = useState(['Digimon']);
 
   // Función para manipular el estado
   /* const handleAdd = () => {
@@ -16,11 +16,9 @@ export const GifExpertApp = () => {
       <h2>GifExpertApp</h2>
       <AddCategory setCategories={setCategories} />
       <hr />
-      <ol>
-        {categories.map((category) => (
-          <GifGrid key={category} category={category} />
-        ))}
-      </ol>
+      {categories.map((category) => (
+        <GifGrid key={category} category={category} />
+      ))}
     </div>
   );
 };
