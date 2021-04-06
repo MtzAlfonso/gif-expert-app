@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import { AddCategory } from './components/AddCategory';
+import { GifGrid } from './components/GifGrid';
 
 export const GifExpertApp = () => {
   // Hook para modificar el estado
-  const [categories, setCategories] = useState([
-    'One Punch',
-    'Sakura',
-    'Dragon Ball',
-  ]);
+  const [categories, setCategories] = useState(['Dragon Ball']);
 
   // Función para manipular el estado
   /* const handleAdd = () => {
@@ -21,7 +18,7 @@ export const GifExpertApp = () => {
       <hr />
       <ol>
         {categories.map((category) => (
-          <li key={category}>{category}</li>
+          <GifGrid key={category} category={category} />
         ))}
       </ol>
     </div>
