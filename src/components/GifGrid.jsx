@@ -10,16 +10,14 @@ export const GifGrid = ({ category }) => {
     <>
       {loading ? (
         <Loader />
-      ) : (
-        <>
-          <h3>Category: <i className="text-thin">{category}</i></h3>
-          <div className="card-grid">
-            {images.map((img) => (
-              <GifGridItem key={img.id} {...img} />
-            ))}
-          </div>
-        </>
-      )}
+      ) : (images.length !== 0 ? <>
+        <h3>Category: <i className="text-thin">{category}</i></h3>
+        <div className="card-grid">
+          {images.map((img) => (
+            <GifGridItem key={img.id} {...img} />
+          ))}
+        </div>
+      </> : <p>Images not found 😢</p>)}
     </>
   );
 };
