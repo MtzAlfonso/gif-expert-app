@@ -1,6 +1,6 @@
 import { shallow } from 'enzyme'
-import { GifGridItem } from '../components/GifGridItem'
-import { getAnimation } from '../helpers/getAnimation';
+import { GifGridItem } from '../../components/GifGridItem'
+// import { getAnimation } from '../helpers/getAnimation';
 
 describe('Tests to <GifGridItem /> component', () => {
   const title = "Test image";
