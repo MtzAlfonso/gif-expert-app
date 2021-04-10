@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import { GifExpertApp } from './GifExpertApp';
 
-import './index.css';
+import './styles/index.css';
 import 'animate.css'
 import { Footer } from './components/Footer';
 
