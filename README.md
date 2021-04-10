@@ -1,6 +1,8 @@
 # Gif Expert App
 
-Esta aplicación funciona con la API de [Giphy Developers](https://developers.giphy.com/ 'Sitio de Giphy Developers') por lo que para utilizarla es necesario configurar el archivo `.env`
+[![Netlify Status](https://api.netlify.com/api/v1/badges/334c8712-9ad1-4513-bda3-e7e9ee03b023/deploy-status)](https://app.netlify.com/sites/gif-giphy/deploys)
+
+Esta aplicación funciona con la API de [Giphy Developers](https://developers.giphy.com/ 'Sitio de Giphy Developers') por lo que para utilizarla es necesario configurar el archivo `.env` con la variable REACT_APP_GIPHY_APIKEY
 
 ## Capturas de pantalla
 
