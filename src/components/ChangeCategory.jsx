@@ -13,7 +13,7 @@ export const ChangeCategory = ({ setCategory }) => {
     if (inputValue.trim().length > 2) {
       //? El hook contiene una referencia al estado anterior,
       //? por lo que no es necesario recibir las categorias como parametro
-      setCategory(inputValue);
+      setCategory(() => inputValue);
       setInputValue('');
     }
   };
